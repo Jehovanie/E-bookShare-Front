@@ -1,9 +1,9 @@
-import image from "./../../../../assets/image/auth_left_side.jpg";
+import image from "assets/image/auth_left_side.jpg";
 
 const Signup = () => {
 	return (
 		<div className="flex flex-col w-screen h-screen items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-			<div className="w-3/5 h-full">
+			<div className="w-3/5 h-full bg-auth-miniature bg-no-repeat bg-cover">
 				<img className="object-cover w-full h-full" src={image} alt="" />
 			</div>
 			<div className="flex flex-col  w-2/5 h-full justify-between p-4 leading-normal bg-gradient-to-br from-slate-50 to-slate-100">

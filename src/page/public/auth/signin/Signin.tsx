@@ -1,12 +1,10 @@
+import image from "assets/image/auth_left_side.jpg";
+
 const Signin = () => {
 	return (
 		<div className="flex flex-col w-screen h-screen items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-			<div className="w-3/5 h-full">
-				<img
-					className="object-cover w-full h-full"
-					src="https://images.unsplash.com/photo-1601469090980-fc95e8d95544?q=80&w=1588&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-					alt=""
-				/>
+			<div className="w-3/5 h-full bg-auth-miniature bg-no-repeat bg-cover">
+				<img className="object-cover w-full h-full" src={image} alt="" />
 			</div>
 			<div className="flex flex-col  w-2/5 h-full justify-between p-4 leading-normal bg-gradient-to-br from-slate-50 to-slate-100">
 				<div className="w-full h-full flex justify-center items-center">
@@ -57,14 +55,12 @@ const Signin = () => {
 							</div>
 							<button
 								type="submit"
-								className="text-black bg-gradient-to-br from-slate-100 to-slate-500 outline-none font-medium rounded-lg text-sm w-full px-5 py-2.5 text-center"
-							>
+								className="text-black bg-gradient-to-br from-slate-100 to-slate-500 outline-none font-medium rounded-lg text-sm w-full px-5 py-2.5 text-center">
 								Connexion
 							</button>
 							<p
 								id="helper-text-explanation"
-								className="mt-2 text-right text-sm text-gray-500 dark:text-gray-400"
-							>
+								className="mt-2 text-right text-sm text-gray-500 dark:text-gray-400">
 								Vous n'avez pas un compte? {"  "}
 								<a href="/inscription" className="font-medium text-blue-600 hover:underline">
 									inscrivez ici
