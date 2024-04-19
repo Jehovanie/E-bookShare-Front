@@ -1,17 +1,22 @@
 import image from "assets/image/auth_left_side.jpg";
+import logo from "assets/image/logo.jpg";
 
 const Signup = () => {
 	return (
 		<div className="flex flex-col w-screen h-screen items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+			<a href="/" className="absolute top-3 left-36 flex items-center space-x-3 rtl:space-x-reverse">
+				<img src={logo} className="h-20 rounded-full" alt="E-bookStreaming" />
+				<span className="self-center text-2xl font-semibold whitespace-nowrap text-white">E-Book'Share</span>
+			</a>
 			<div className="w-3/5 h-full bg-auth-miniature bg-no-repeat bg-cover">
 				<img className="object-cover w-full h-full" src={image} alt="" />
 			</div>
 			<div className="flex flex-col  w-2/5 h-full justify-between p-4 leading-normal bg-gradient-to-br from-slate-50 to-slate-100">
 				<div className="w-full h-full flex justify-center items-center">
-					<div className="w-2/3 h-2/3 block">
+					<div className="w-2/3 h-4/5 block">
 						<form className="max-w-sm mx-auto">
 							<h1 className="mb-5 text-2xl font-extrabold leading-none tracking-tight text-gray-500 md:text-5xl lg:text-6xl dark:text-white">
-								<span className="underline underline-offset-3 decoration-8 decoration-slate-400">
+								<span className="underline underline-offset-3 decoration-8 decoration-red-500">
 									Ins
 								</span>
 								cription
@@ -54,8 +59,8 @@ const Signup = () => {
 							</div>
 
 							<button
-								type="submit"
-								className="text-black bg-gradient-to-br from-slate-100 to-slate-500 outline-none font-medium rounded-lg text-sm w-full px-5 py-2.5 text-center">
+								type="button"
+								className="text-white w-full bg-red-500 hover:bg-red-600 focus:outline-none focus:ring-4 focus:ring-red-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">
 								Inscription
 							</button>
 							<p
@@ -75,11 +80,9 @@ const Signup = () => {
 									className="w-full flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
 									<svg
 										aria-hidden="true"
-										svg
 										className="h-5"
 										viewBox="0 0 75.591 75.591"
-										xmlns="http://www.w3.org/2000/svg"
-										xmlns:xlink="http://www.w3.org/1999/xlink">
+										xmlns="http://www.w3.org/2000/svg">
 										<linearGradient
 											id="a"
 											gradientTransform="matrix(0 -54.944 -54.944 0 23.62 79.474)"
@@ -122,8 +125,7 @@ const Signup = () => {
 										className="h-5"
 										viewBox="0 0 512 512"
 										version="1.1"
-										xmlns="http://www.w3.org/2000/svg"
-										xmlns:xlink="http://www.w3.org/1999/xlink">
+										xmlns="http://www.w3.org/2000/svg">
 										<defs>
 											<radialGradient
 												cx="0%"
