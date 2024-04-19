@@ -10,9 +10,9 @@ const Signin = () => {
 			</div>
 			<div className="flex flex-col  w-2/5 h-full justify-between p-4 leading-normal bg-gradient-to-br from-slate-50 to-slate-100">
 				<div className="w-full h-full flex justify-center items-center">
-					<div className="w-1/2 h-1/2 block">
+					<div className="w-2/3 h-1/2 block">
 						<form className="max-w-sm mx-auto">
-							<h1 className="mb-4 text-xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+							<h1 className="mb-5 text-2xl font-extrabold leading-none tracking-tight text-gray-500 md:text-5xl lg:text-6xl dark:text-white">
 								<span className="underline underline-offset-3 decoration-8 decoration-slate-400">
 									Con
 								</span>
@@ -41,7 +41,7 @@ const Signin = () => {
 									required
 								/>
 							</div>
-							<div className="flex items-start mb-5">
+							<div className="flex items-start mb-2">
 								<div className="flex items-center h-5">
 									<input
 										id="remember"
@@ -61,6 +61,15 @@ const Signin = () => {
 							>
 								Connexion
 							</button>
+							<p
+								id="helper-text-explanation"
+								className="mt-2 text-right text-sm text-gray-500 dark:text-gray-400"
+							>
+								Vous n'avez pas un compte? {"  "}
+								<a href="/inscription" className="font-medium text-blue-600 hover:underline">
+									inscrivez ici
+								</a>
+							</p>
 						</form>
 					</div>
 				</div>
